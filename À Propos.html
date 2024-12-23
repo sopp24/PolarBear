@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PolarBear</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Accueil.html">Accueil</a></li>
+                <li><a href="Biographie.html">Biographie</a></li>
+                <li><a href="Travaux et Publications.html">Travaux & Publications</a></li>
+                <li><a href="Galerie.html">Galerie</a></li>
+                <li><a href="À Propos.html">À Propos</a></li>
+                <li><a href="Contact et Sources.html">Contact & Sources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="accueil" class="section">
+        <h1>À Propos</h1>
+        <img src="PeterMorvilleÀpropos.png" alt="Image de l'acteur" class="main-image" width="1000">
+        <article>
+        <h2>Design et architecture du site</h2>
+        <p class="p_paragraph">Pour l’architecture du site, j’ai décidé de partir sur un site web en section.</p>
+
+        <p class="p_paragraph">Dans le header, j’ai mis chaque rubrique pour pouvoir y accéder facilement. 
+            Néanmoins, j'ai aussi mis chaque section dans la page d’accueil en résumant ces dernières et 
+            en ajoutant la mention « En savoir plus » pour éviter de remonter jusqu’au header.</p>
+
+        <p class="p_paragraph">Le design et le titre du site reprennent l'œuvre « Information Architecture » 
+            de M. Morville. Tout d’abord, le logo comprend le même bleu que la première de couverture de l'œuvre, 
+            une des œuvres les plus célèbres de l’auteur. J’ai par ailleurs 
+            utilisé une police moderne et rappelant le numérique. Ensuite, dans le body, on peut 
+            distinguer un ours polaire. Enfin, le site s’appelle « PolarBear » (« ours polaire » en anglais). 
+            Le site est épuré, simple, avec des rappels d’une même couleur, tout comme le sont les 
+            publications de Peter Morville. Chaque page est aussi accompagné d’au moins une illustration 
+            pour imager le propos.</p>
+
+        <p class="p_paragraph">Pour le formulaire de contact, j’ai opté pour une solution plutôt originale. 
+            La plupart des solutions pour créer un formulaire directement dans le site intégrait du 
+            Hypertext Preprocessor (ou PHP), langage qui m’est assez inconnu et qui implique aussi de créer des 
+            serveurs pour héberger la fonction du code. Par conséquent, j’ai fini par trouver une 
+            alternative : un site qui permet, grâce à un code Javascript, d’envoyer un mail sur un 
+            site qui me le renvoie à son tour. Cette variation m’a alors permis d’avoir une rubrique 
+            « Contact » fonctionnelle.</p>
+
+        <p class="p_paragraph">Dans la section « Galerie », j’ai aussi créé un code Javascript qui me 
+            permet de naviguer à travers les photos grâce aux flèches directionelles. 
+            J’ai aussi fait en sorte d’avoir le même format pour chaque photo afin que soit 
+            agréable à l'œil (chaque iamage a été récardrée, comme indiqué dans la section « Sources »).</p>
+
+        <p class="p_paragraph">Ensuite, dans le footer, j’ai mis les mentions « © 2024 Adam Soppelsa. 
+            Tous droits réservés. » pour protéger les droits concernant ma production. J’ai également 
+            mis le site de l’IUT Bordeaux Montaigne, étant donné que ce travail m’a été aidé demander 
+            dans un cadre scolaire.</p>
+
+            <p class="p_paragraph">Pour finir, tout au long de mon processus de création, je me suis 
+                écris des commentaires (que j'ai enlevé une fois le code fini) dans le code pour ne 
+                pas oublier à quoi servent certaines commandes. C'est un réel conseil que je peux 
+                donner si vous effectuez vos premiers sites. Cela m'a bien aidé.</p>
+
+        <h2 class="margin-top">Démarche de création, objectifs et cibles du site</h2>
+        <p class="p_paragraph">Créer un site dédié à Peter Morville est une belle manière de célébrer 
+            son héritage et d'éclairer son influence sur l’architecture de l’information et le design 
+            UX. P.Morville est une figure emblématique qui a révolutionné notre façon de comprendre et 
+            d'interagir avec l’information. Son travail a non seulement défini des normes et 
+            des pratiques, mais il continue d’inspirer des générations de professionnels. Développer
+             ce site permet alors, que le registre soit académique, professionnel ou purement 
+             informationnel, de rendre l’implication de Peter Morville la plus claire, concise et 
+             accessible à tous. Le site est ludique tout en apportant des informations sourcées et 
+             fiables.</p>
+
+        <p class="p_paragraph">Le site vise plusieurs objectifs essentiels. Tout d'abord, il sert 
+            de ressource éducative en rassemblant ses publications clés, articles et biographie, 
+            permettant ainsi aux étudiants, chercheurs et professionnels d'explorer facilement ses contributions. 
+            J’ai également créé un formulaire de contact pour toutes demandes, 
+            correction ou réflection à propos de l’auteur. De surcroît, le discours employé tout 
+            au long du site reste simple et compréhensible. Le but est de vulgariser la complexité 
+            de la vie et des travaux de Peter, et non l’inverse.</p>
+
+        <p class="p_paragraph"><strong>Rappel : Si vous avez la moindre requête, envoyez-moi un mail <a href="Contact et Sources.html">via le formulaire.</a></strong></p>
+        
+        <p class="p_paragraph" style="margin-top: 100px;">Adam Sopplesa.</p>
+        </article>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Adam Soppelsa. Tous droits réservés.</p>
+        <p><a href="https://www.iut.u-bordeaux-montaigne.fr/">IUT Bordeaux Montaigne</a> </p>
+    </footer> 
+    <script>
+        window.onload = function() {
+            var links = document.querySelectorAll('a');
+            links.forEach(function(link) {
+                link.style.color = '';
+            });
+        };
+    
+        window.onbeforeunload = function() {
+            var links = document.querySelectorAll('a');
+            links.forEach(function(link) {
+                link.style.color = '';
+            });
+        };
+    </script>
+           
+           <button id="scrollToTopBtn" class="scrollToTopBtn">↑</button>
+</body>
+</html>

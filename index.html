@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PolarBear</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Underline:ital,wght@0,600;1,600&family=Outfit:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("service_jxh0b4e");
+        })();
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Accueil.html">Accueil</a></li>
+                <li><a href="Biographie.html">Biographie</a></li>
+                <li><a href="Travaux et Publications.html">Travaux & Publications</a></li>
+                <li><a href="Galerie.html">Galerie</a></li>
+                <li><a href="À Propos.html">À Propos</a></li>
+                <li><a href="Contact et Sources.html">Contact & Sources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="accueil" class="section">
+        <h1 class="polarbear rounded-box">PolarBear.</h1>
+        <img src="PeterMorvilleAccueil_copie-removebg-preview.png" alt="Image de Peter Morville" class="image-accueil">
+    </section>
+
+    <section id="accueil" class="section">
+        <p class="p_accueil2"><i><b>"Il faut passer des cases aux flèches. Demain appartient à ceux qui se connectent."</b> Peter Morville, <a href="https://archive.org/details/isbn_9780692225585">Intertwingled : Information Changes Everything.</a></i></p>
+        <p class="p_accueil2" style="color: #f4a261"><strong>Découvrez l'histoire, les travaux et les contributions d'un acteur majeur dans l'histoire de l'architecture de l'information.</strong></p>
+    </section>
+
+    <section id="biographie" class="section">
+        <h2>Biographie</h2>
+        <p class="p_accueil3">L'article retrace la carrière de Peter Morville, qui a contribué à façonner le domaine de l'architecture de l'information et l'expérience utilisateur, et présente ses différents travaux et entreprises. <a href="Biographie.html">En savoir plus</a></p>
+    </section>
+
+    <section id="travaux" class="section">
+        <h2>Travaux & Publications</h2>
+        <ul>
+            <li><p class="p_accueil3"><a href="https://books.google.fr/books/about/Information_Architecture_for_the_World_W.html?id=KO9SAAAAMAAJ&redir_esc=y"><i>Information Architecture for the World Wide Web,</i> 1998, co-écrit avec Louis Rosenfeld</a></a> - Architecture de l'information</p></li>
+            <li><p class="p_accueil3"><a href="https://www.oreilly.com/library/view/ambient-findability/0596007655/">Ambient Findability, 2005</a> - Reperabilité</li>
+            <li><p class="p_accueil3"><a href="https://journalofia.org/about/">Journal of Information Architecture (conseiller consultatif), lancé en 2009</a> - Architecture de l'information</p></li>
+        </ul>
+        <p class="p_accueil3"><a href="Travaux et Publications.html">En savoir plus</a></p>
+    </section>
+
+    <section id="galerie" class="section">
+        <h2>Galerie</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <a href="Galerie.html">
+                    <img src="Conférence sur l'architecture de la compréhension, Manchester.png" alt="Image 1">
+                    <p>Conférence sur l'architecture de la compréhension, Manchester</p>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="Galerie.html"> 
+                    <img src="nid-abeille-peter-morville.png" alt="Image 2">
+                    <p>Le nid d'abeille.</p>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="Galerie.html"> 
+                    <img src="Analogie de la course à pieds.png" alt="Image 3">
+                    <p>Analogie de la course à pieds.</p>
+                </a>
+            </div>
+        </div>
+        <a href="galerie.html">En voir plus</a>
+    </section>
+
+    <section id="apropos" class="section">
+        <h2>À Propos</h2>
+        <p class="p_accueil3">Explication des choix de design et d’architecture du site. Démarche de création, objectifs et cible. <a href="À Propos.html">En savoir plus</a></p>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p class="p_accueil">Pour toute demande, n'hésitez pas à me formuler un mail.</p>
+        <form id="contact-form">
+            <label for="name">Votre Nom :</label>
+            <input type="text" id="name" name="name" required>
+        
+            <label for="email">Votre Email :</label>
+            <input type="email" id="email" name="user_email" required>
+        
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+        
+            <button type="submit">Envoyer</button>
+        </form>
+
+        <h2 class="margin-top">Sources</h2>
+        <ul>
+            <li><p class="p_accueil3"><a href="https://semanticstudios.com/about/" target="_blank">About Semantic Studios</a></p></li>
+            <li><p class="p_accueil3"><a href="https://en.wikipedia.org/wiki/Peter_Morville" target="_blank">Peter Morville : A Pioneer in User Experience</a></p></li>
+            <li><p class="p_accueil3"><a href="https://www.oreilly.com/pub/au/561" target="_blank">Books and Contributions by Peter Morville</a></p></li>
+        </ul>
+        <p class="p_accueil3"><a href="Contact et Sources.html">En voir plus</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Adam Soppelsa. Tous droits réservés.</p>
+        <p><a href="https://www.iut.u-bordeaux-montaigne.fr/">IUT Bordeaux Montaigne</a></p>
+    </footer>
+    <script>
+        window.onload = function() {
+            var links = document.querySelectorAll('a');
+            links.forEach(function(link) {
+                link.style.color = '';
+            });
+        };
+    
+        window.onbeforeunload = function() {
+            var links = document.querySelectorAll('a');
+            links.forEach(function(link) {
+                link.style.color = '';
+            });
+        };
+    </script>
+    <button id="scrollToTopBtn" class="scrollToTopBtn">↑</button>
+</body>
+</html>

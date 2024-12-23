@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PolarBear</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Accueil.html">Accueil</a></li>
+                <li><a href="Biographie.html">Biographie</a></li>
+                <li><a href="Travaux et Publications.html">Travaux & Publications</a></li>
+                <li><a href="Galerie.html">Galerie</a></li>
+                <li><a href="À Propos.html">À Propos</a></li>
+                <li><a href="Contact et Sources.html">Contact & Sources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="accueil" class="section">
+        <h1>Contact</h1>
+        <p>Pour toute demande, n'hésitez pas à me formuler un mail.</p>
+        <form id="contact-form">
+            <label for="name">Votre Nom :</label>
+            <input type="text" id="name" name="name" required>
+        
+            <label for="email">Votre Email :</label>
+            <input type="email" id="email" name="user_email" required>
+        
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+        
+            <button type="submit">Envoyer</button>
+        </form>
+        <script src="email.js"></script> 
+
+        <h1 class="margin-top">Sources</h1>
+        <ul>
+        <li><p class="p_paragraph"><strong>Utilisation de ChatGPT (pour quelques commandes du codes)</strong></p></li>
+        <li><p class="p_paragraph"><strong>Utilisation de Copilot (pour la structuration de certaines données)</strong></p></li>
+        <li><p class="p_paragraph"><strong>Recadrage de certaines photos pour conserver l'ergonomie intiniallement voulue</strong></p></li>
+        <li><p class="p_paragraph"><a href="https://semanticstudios.com/about/" target="_blank">About Semantic Studios</a></p></li>
+        <li><p class="p_paragraph"><a href="https://en.wikipedia.org/wiki/Peter_Morville" target="_blank">Peter Morville : A Pioneer in User Experience</a></p></li>
+        <li><p class="p_paragraph"><a href="https://www.oreilly.com/pub/au/561" target="_blank">Books and Contributions by Peter Morville</a></p></li>
+        <li><p class="p_paragraph"><a href="https://uxmag.com/contributors/peter-morville" target="_blank">Peter Morville's UX Insights on UX Magazine</a></p></li>
+        <li><p class="p_paragraph"><a href="https://tillerdigital.com/blog/7-challenges-in-web-application-development/" target="_blank">7 Challenges in Web Application Development</a></p></li>
+        <li><p class="p_paragraph"><a href="https://webfoundation.org/2017/03/web-turns-28-letter/" target="_blank">The Web at 28 : Reflections and Future Challenges</a></p></li>
+        <li><p class="p_paragraph"><a href="https://www.uxmatters.com/mt/archives/2019/08/emerging-technologies-and-user-experience.php" target="_blank">Emerging Technologies and User Experience</a></p></li>
+        <li><p class="p_paragraph"><a href="https://www.whoisaccessible.com/guidelines/the-biggest-compliance-challenges-websites-face-in-web-accessibility/" target="_blank">Accessibility Challenges in Web Design</a></p></li>
+        <li><p class="p_paragraph"><a href="https://lagrandeourse.design/blog/ux-design/quest-ce-que-l-ux-design/" target="_blank">What is UX Design ?</a></p></li>
+        <li><p class="p_paragraph"><a href="https://www.cnil.fr/fr/intelligence-artificielle/intelligence-artificielle-de-quoi-parle-t-on" target="_blank">Understanding Artificial Intelligence</a></p></li>
+        <li><p class="p_paragraph"><a href="https://conveyux.com/speakers/peter-morville/" target="_blank">Peter Morville at ConveyUX</a></p></li>
+        <li><p class="p_paragraph"><a href="https://2018.uxlondon.com/speakers/peter-morville" target="_blank">Peter Morville's Presentation at UX London</a></p></li>
+        <li><p class="p_paragraph"><a href="https://sentientsanctuary.org/" target="_blank">The Sentient Sanctuary</a></p></li>
+        <li><p class="p_paragraph"><a href="https://intertwingled.org/realising-sanctuary/" target="_blank">Seeking Sanctuary</a></p></li>
+        <li><p class="p_paragraph"><a href="https://www.citeco.fr/10000-ans-histoire-economie/monde-contemporain/eclatement-de-la-bulle-de-l-internet" target="_blank">Éclatement de la « bulle » de l'Internet</a></p></li>
+        <li><p class="p_paragraph"><a href="https://www.fb-bourse.com/effondrement-de-la-bulle-internet-et-le-krach-boursier-de-2000/" target="_blank">L’effondrement de la bulle internet et le krach boursier de 2000</a></p></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Adam Soppelsa. Tous droits réservés.</p>
+        <p><a href="https://www.iut.u-bordeaux-montaigne.fr/">IUT Bordeaux Montaigne</a> </p>
+    </footer>   
+    <script>
+        window.onload = function() {
+            var links = document.querySelectorAll('a');
+            links.forEach(function(link) {
+                link.style.color = '';
+            });
+        };
+    
+        window.onbeforeunload = function() {
+            var links = document.querySelectorAll('a');
+            links.forEach(function(link) {
+                link.style.color = '';
+            });
+        };
+    </script>
+        <button id="scrollToTopBtn" class="scrollToTopBtn">↑</button>
+ 
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PolarBear</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Accueil.html">Accueil</a></li>
+                <li><a href="Biographie.html">Biographie</a></li>
+                <li><a href="Travaux et Publications.html">Travaux & Publications</a></li>
+                <li><a href="Galerie.html">Galerie</a></li>
+                <li><a href="À Propos.html">À Propos</a></li>
+                <li><a href="Contact et Sources.html">Contact & Sources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="accueil" class="section">
+        <h1>Galerie</h1>
+        <article>
+        <p>Quelques illustrations reflétant la carrière académique et professionelle de Peter Morville.</p>
+        </article>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="Conférence sur l'architecture de la compréhension, Manchester.png" onclick="openModal(this.src)">
+                <p> <a href="https://www.youtube.com/watch?v=GxPxxQlkszQ">Conférence sur l'architecture de la compréhension, Manchester.</a></p>
+            </div>
+            <div class="gallery-item">
+                <img src="nid-abeille-peter-morville.png" onclick="openModal(this.src)">
+                <p> <a href="https://www.lunaweb.fr/actualites/blog/ux-architecture-informationnelle-peter-morville/">Le nid d'abeille.</a></p>
+            </div>
+            <div class="gallery-item">
+                <img src="Analogie de la course à pieds.png" onclick="openModal(this.src)">
+                <p> <a href="https://noop.nl/2014/09/3-questions-for-peter-morville.html">Analogie de la course à pieds.</a></p>
+            </div>
+            <div class="gallery-item">
+                <img src="La boucle de double interaction.png" onclick="openModal(this.src)">
+                <p> <a href="https://noop.nl/2014/09/3-questions-for-peter-morville.html">La boucle de double interaction.</a></p>
+            </div>
+            <div class="gallery-item">
+                <img src="Contexte, contenu et utilisateur.png" onclick="openModal(this.src)">
+                <p> <a href="https://danewesolko.medium.com/peter-morvilles-user-experience-honeycomb-904c383b6886">Contexte, contenu et utilisateur.</a></p>
+            </div>
+            <div class="gallery-item">
+                <img src="Pyramide du choix.png" onclick="openModal(this.src)">
+                <p> <a href="https://medium.com/information-architecture/medium-7ddf2ad4bc3">Pyramide du choix.</a></p>
+        </div>
+    </section>
+
+    <div id="imageModal" class="modal">
+        <span onclick="closeModal()" class="close">&times;</span>
+        <img id="modalImage" class="modal-content">
+        <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+        <a class="next" onclick="changeImage(1)">&#10095;</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Adam Soppelsa. Tous droits réservés.</p>
+        <p><a href="https://www.iut.u-bordeaux-montaigne.fr/">IUT Bordeaux Montaigne</a> </p>
+    </footer>    
+
+    <script src="fleches.js"></script>
+    <script>
+        window.onload = function() {
+            var links = document.querySelectorAll('a');
+            links.forEach(function(link) {
+                link.style.color = ''; 
+            });
+        };
+    
+        window.onbeforeunload = function() {
+            var links = document.querySelectorAll('a');
+            links.forEach(function(link) {
+                link.style.color = ''; 
+            });
+        };
+    </script>  
+</body>
+</html>
+
